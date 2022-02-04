@@ -1,0 +1,15 @@
+{
+  "name": "2022_portfolio",
+  "version": "1.0.0",
+  "description": "2022 신혁준 포트폴리오",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SHJ",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0"
+  }
+}
