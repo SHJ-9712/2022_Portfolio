@@ -1,0 +1,33 @@
+@font-face {
+font-family: 'Poppins-Regular';
+    src: url('../font/Poppins-Regular.eot');
+    src: url('../font/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/Poppins-Regular.svg#Poppins-Regular') format('svg'),
+         url('../font/Poppins-Regular.ttf') format('truetype'),
+         url('../font/Poppins-Regular.woff') format('woff'),
+         url('../font/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../font/Poppins-Medium.eot');
+    src: url('../font/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../font/Poppins-Medium.svg#Poppins-Medium') format('svg'),
+         url('../font/Poppins-Medium.ttf') format('truetype'),
+         url('../font/Poppins-Medium.woff') format('woff'),
+         url('../font/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../font/Poppins-SemiBold.eot');
+    src: url('../font/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../font/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg'),
+         url('../font/Poppins-SemiBold.ttf') format('truetype'),
+         url('../font/Poppins-SemiBold.woff') format('woff'),
+         url('../font/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
