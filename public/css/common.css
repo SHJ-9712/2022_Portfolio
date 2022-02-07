@@ -43,7 +43,7 @@
 }
 * {margin: 0; padding: 0; box-sizing: border-box;}
 body {margin: 0 0 3rem 0; font-family: 'Poppins-Medium'; font-size: var(--normal-font-size); color: var(--text-color); background-color: var(--body-color);}
-h1, h2, h3, h4 {color: var(--title-color);}
+h1, h2, h3, h4 {font-family: 'Poppins-SemiBold'; color: var(--title-color);}
 ol, ul {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none; color: var(--title-color);}
 a:hover {text-decoration: none; color: var(--main-color);}
@@ -53,4 +53,10 @@ button {padding: 0; background: none; border: none; cursor: pointer;}
 .blind {position: absolute; clip: rect(0px, 0px, 0px, 0px); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
 .container {max-width: 768px; margin: 0 var(--m-1-5);}
 .grid {display: -ms-grid; display: grid; gap: 1.5rem;}
+.section {padding: 2rem 0 4rem;}
+.section .title {font-size: var(--h1-font-size); text-align: center;}
 .title {font-size: var(--h1-font-size); text-align: center;}
+.button {padding: 1rem; display: inline-flex; align-items: center; color: var(--white-color); background-color: var(--main-color); -webkit-border-radius: 0.5rem; -moz-border-radius: 0.5rem; border-radius: 0.5rem;}
+.button svg {width: 1.25rem; height: auto; margin-left: var(--m-0-5);}
+.button svg > path {fill: var(--white-color);}
+.button:hover {color: var(--white-color); background-color: var(--hover-color);}
