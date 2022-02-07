@@ -10,7 +10,7 @@ header .nav .nav__list > li a:hover svg > path {fill: var(--main-color);}
     header .nav .nav__list {grid-template-columns: repeat(4, 1fr);}
     header .nav .nav__list > li a svg {margin-bottom: 0.3rem;}
 }
-header .nav .nav__menu .nav__menu__close {width: 1.5rem; height: auto; position: absolute; bottom: 0.5rem; right: 1.3rem;}
+header .nav .nav__menu .nav__menu__close {width: 1.5rem; height: auto; position: absolute; bottom: 0.7rem; right: 1.3rem;}
 header .nav .nav__menu .nav__menu__close svg > path {fill: var(--main-color);}
 header .nav .nav__menu .nav__menu__close:hover svg > path {fill: var(--hover-color);}
 header .nav .nav__menu-btn {width: 1.125rem; color: var(--title-color);}
@@ -20,3 +20,24 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 }
 /* nav__menu-btn 클릭시 nav__menu show script */
 .show-menu {bottom: 0 !important;}
+
+/* == HOME == */
+.home > .home__container {padding-top: 3.5rem;}
+.home__profile-img {text-align: center;}
+.home__profile-img svg {width: 200px; fill: var(--main-color);}
+.home__profile-img .selfie {width: 130px;}
+.home__txt {padding: 1.5rem 0;}
+.home__title {font-size: var(--big-font-size);}
+.home__desc {margin-bottom: var(--m-0-75); font-size: var(--h3-font-size);}
+.github-link {margin-bottom: var(--m-2); display: inline-flex; align-items: flex-end; position: relative;}
+.github-link::after {content: ""; width: 92%; border-bottom: 1px solid #000; position: absolute; bottom: 0; left: 0;}
+.github-link:hover::after {border-color: var(--main-color);}
+.github-link svg {width: 20px; margin-left: 4px;}
+.github-link:hover svg > path {fill: var(--main-color);}
+.home__skills {margin-bottom: var(--m-2); display: flex; flex-wrap: wrap;}
+.home__skills li {width: 34px; height: 34px; margin: 0 var(--m-0-75) var(--m-0-75) 0; background: url(../images/sprites.png) no-repeat 0 0;}
+.home__skills .css {background-position-x: -35px;}
+.home__skills .javascript {background-position-x: -70px;}
+.home__skills .jquery {background-position-x: -105px;}
+.home__skills .bootstrap {background-position-x: -140px;}
+.home__skills .photoshop {background-position-x: -175px;}
