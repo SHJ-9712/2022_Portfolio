@@ -39,5 +39,15 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 .home__skills .css {background-position-x: -35px;}
 .home__skills .javascript {background-position-x: -70px;}
 .home__skills .jquery {background-position-x: -105px;}
-.home__skills .bootstrap {background-position-x: -140px;}
 .home__skills .photoshop {background-position-x: -175px;}
+
+/* == EXPERIENCE == */
+.experience__data {display: grid; grid-template-columns: 1fr max-content 1fr; column-gap: 1.5rem;}
+.experience__data--right {text-align: right;}
+.experience__data--left {text-align: left;}
+.experience .title {margin-bottom: var(--m-2);}
+.experience__subtitle {margin-bottom: var(--m-1); display: inline-block; font-size: var(--small-font-size);}
+.experience__calendar {font-size: var(--small-font-size); color: var(--text-color-light);}
+.experience__calendar svg {width: var(--smaller-font-size);}
+.experience__rounder {width: 13px; height: 13px; display: inline-block; background-color: var(--main-color); border-radius: 50%;}
+.experience__line {width: 1px; height: 100%; display: block; background-color: var(--main-color); transform: translate(6px, -7px);}
