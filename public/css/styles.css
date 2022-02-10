@@ -51,3 +51,14 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 .experience__calendar svg {width: var(--smaller-font-size);}
 .experience__rounder {width: 13px; height: 13px; display: inline-block; background-color: var(--main-color); border-radius: 50%;}
 .experience__line {width: 1px; height: 100%; display: block; background-color: var(--main-color); transform: translate(6px, -7px);}
+
+/* == CONTACT ME == */
+.contact {padding-top: 2rem;}
+.contact__bg {padding: 2rem 0 3rem; background-color: var(--main-color);}
+.contact .title {margin-bottom: var(--m-2); color: var(--white-color);}
+.contact__info svg {width: 20px; margin-right: var(--m-1-5);}
+.contact__info svg > path {fill: var(--white-color);}
+.contact__subtitle {color: var(--white-color);}
+.contact__subtitle:hover {color: var(--sub-color);}
+.contact__info {margin-bottom: var(--m-1); display: flex; align-items: center;}
+.contact__info:last-of-type {margin-bottom: 0;}
