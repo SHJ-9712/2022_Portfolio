@@ -62,15 +62,6 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 .portfolio__box {width: 70%;}
 
 /* == CONTACT ME == */
-.contact {padding-top: 2rem;}
-.contact__bg {padding: 2rem 0 3rem; background-color: var(--main-color);}
-.contact .title {color: var(--white-color);}
-.contact__info svg {width: 20px; margin-right: var(--m-1-5);}
-.contact__info svg > path {fill: var(--white-color);}
-.contact__subtitle {color: var(--white-color);}
-.contact__subtitle:hover {color: var(--sub-color);}
-.contact__info {margin-bottom: var(--m-1); display: flex; align-items: center;}
-.contact__info:last-of-type {margin-bottom: 0;}
 
 /* == SCROLL TOP 버튼 == */
 .scroll-up {padding: 0.3rem; font-size: 0; position: fixed; bottom: -20%; right: 1rem; background-color: var(--main-color); border-radius: 0.4rem; opacity: 0.8; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; z-index: 10;}
@@ -111,7 +102,7 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
     
     .nav__menu {margin-left: auto;}
     .nav__list {display: flex; column-gap: 2rem;}
-    
+
     .home__content {padding-top: 5.5rem; column-gap: 2rem;}
     .home__profile-img svg {width: 270px;}
 
