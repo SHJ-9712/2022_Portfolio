@@ -71,3 +71,9 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 .contact__subtitle:hover {color: var(--sub-color);}
 .contact__info {margin-bottom: var(--m-1); display: flex; align-items: center;}
 .contact__info:last-of-type {margin-bottom: 0;}
+
+/* SCROLL TOP 버튼 */
+.scroll-up {padding: 0.3rem; font-size: 0; position: fixed; bottom: -20%; right: 1rem; background-color: var(--main-color); border-radius: 0.4rem; opacity: 0.8; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; z-index: 10;}
+.scroll-up svg {width: 24px; fill: #fff;}
+.scroll-up:hover {background-color: var(--hover-color);}
+.scroll-up--show {bottom: 5rem;}

@@ -21,6 +21,13 @@ function linkAction(){
 }
 navMenuLink.forEach(n => n.addEventListener('click', linkAction));
 
+// 스크롤 시 모바일, 태블릿용 헤더에 그림자 추가
+function scrollHeader(){
+    const nav = document.querySelector('header')
+    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader);
+
 // 스크롤 시 해당 섹션 메뉴에 표시
 const sections = document.querySelectorAll('section[id]')
 
@@ -41,9 +48,20 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive);
 
-// 스크롤 시 모바일, 태블릿용 헤더에 그림자 추가
-function scrollHeader(){
-    const nav = document.querySelector('header')
-    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+// 스크롤 업 버튼
+const backToTop = document.getElementById('scroll-up');
+const checkScroll=()=>{
+    let pageOffset = window.pageYOffset;
+    if(pageYOffset >= 300){
+        backToTop.classList.add('scroll-up--show');  
+    }else{
+        backToTop.classList.remove('scroll-up--show'); 
+    }
 }
-window.addEventListener('scroll', scrollHeader);
+const moveBackToTop=()=>{
+    if(window.pageYOffset > 0){
+        window.scrollTo({top:0, behavior:"smooth"});
+    }
+}
+window.addEventListener('scroll', checkScroll);
+backToTop.addEventListener('click',moveBackToTop);
