@@ -19,4 +19,31 @@ const navMenuLink = document.querySelectorAll('header .nav .nav__list > li a');
 function linkAction(){
     navMenu.classList.remove('show-menu')
 }
-navMenuLink.forEach(n => n.addEventListener('click', linkAction))
+navMenuLink.forEach(n => n.addEventListener('click', linkAction));
+
+// 스크롤 시 해당 섹션 메뉴에 표시
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('nav__list--active')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('nav__list--active')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive);
+
+// 스크롤 시 모바일, 태블릿용 헤더에 그림자 추가
+function scrollHeader(){
+    const nav = document.querySelector('header')
+    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader);
