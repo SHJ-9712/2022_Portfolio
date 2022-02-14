@@ -21,7 +21,7 @@ function linkAction(){
 }
 navMenuLink.forEach(n => n.addEventListener('click', linkAction));
 
-// 스크롤 시 모바일, 태블릿용 헤더에 그림자 추가
+// 스크롤 시 768px 이상 헤더에 그림자 및 애니메이션
 function scrollHeader(){
     const nav = document.querySelector('header')
     if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')

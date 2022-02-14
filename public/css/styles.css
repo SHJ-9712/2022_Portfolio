@@ -22,8 +22,6 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 }
 /* nav__menu-btn 클릭시 nav__menu show script */
 .show-menu {bottom: 0 !important;}
-/*  */
-.scroll-header {box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);}
 
 /* == HOME == */
 .home__container {gap: 1rem;}
@@ -32,7 +30,7 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 .home__profile-img svg {width: 200px; fill: var(--main-color);}
 .home__profile-img .selfie {width: 130px;}
 .home__title {font-size: var(--big-font-size);}
-.home__desc {margin-bottom: var(--m-0-75); font-size: var(--h3-font-size);}
+.home__desc {margin-bottom: var(--m-1-5); font-size: var(--h3-font-size);}
 .github-link {margin-bottom: var(--m-2); display: inline-flex; align-items: flex-end; position: relative;}
 .github-link::after {content: ""; width: 92%; border-bottom: 1px solid #000; position: absolute; bottom: 0; left: 0;}
 .github-link:hover::after {border-color: var(--main-color);}
@@ -104,7 +102,9 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
     main,
     footer {padding: 0 1rem;}
 
-    .nav {height: calc(3rem + 1.5rem) !important; column-gap: 1rem;}
+    .nav {height: 9rem !important; column-gap: 1rem; -webkit-transition: height 0.5s ease; -moz-transition: height 0.5s ease; -o-transition: height 0.5s ease; transition: height 0.5s ease}
+    .scroll-header {box-shadow: 0px 0px 10px 0px rgb(34 34 34 / 6%);}
+    .scroll-header .nav {height: 4.5rem !important;}
     .nav__list li a svg,
     .nav__menu-btn,
     .nav__menu__close {display: none;}
