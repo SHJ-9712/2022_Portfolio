@@ -26,11 +26,11 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 .scroll-header {box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);}
 
 /* == HOME == */
-.home > .home__container {padding-top: 3.5rem;}
+.home__container {gap: 1rem;}
+.home__content {padding-top: 3.5rem; align-items: center;}
 .home__profile-img {text-align: center;}
 .home__profile-img svg {width: 200px; fill: var(--main-color);}
 .home__profile-img .selfie {width: 130px;}
-.home__txt {padding: 1.5rem 0;}
 .home__title {font-size: var(--big-font-size);}
 .home__desc {margin-bottom: var(--m-0-75); font-size: var(--h3-font-size);}
 .github-link {margin-bottom: var(--m-2); display: inline-flex; align-items: flex-end; position: relative;}
@@ -72,8 +72,56 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 .contact__info {margin-bottom: var(--m-1); display: flex; align-items: center;}
 .contact__info:last-of-type {margin-bottom: 0;}
 
-/* SCROLL TOP 버튼 */
+/* == SCROLL TOP 버튼 == */
 .scroll-up {padding: 0.3rem; font-size: 0; position: fixed; bottom: -20%; right: 1rem; background-color: var(--main-color); border-radius: 0.4rem; opacity: 0.8; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; z-index: 10;}
 .scroll-up svg {width: 24px; fill: #fff;}
 .scroll-up:hover {background-color: var(--hover-color);}
 .scroll-up--show {bottom: 5rem;}
+
+
+/* ======= 미디어쿼리 ======= */
+@media screen and (max-width: 350px) {
+    .home__profile-img svg {width: 180px;}
+    .container {margin: 0 var(--m-1);}
+    .experience__data {gap: 0.5rem;}
+}
+
+@media screen and (min-width: 568px) {
+    .home__content {grid-template-columns: 1fr max-content;}
+    .home__txt {grid-column: initial;}
+    .home__profile-img {order: 1; justify-self: center;}
+    /* .experience__sections {display: grid; grid-template-columns: 0.6fr; justify-content: center;} */
+}
+
+@media screen and (min-width: 768px) {
+    body {margin: 0;}
+    .container {margin: 0 auto;}
+    .section {padding: 6rem 0 2rem;}
+    .title {margin-bottom: 4rem;}
+
+    header {top: 0; bottom: initial;}
+    header,
+    main,
+    footer {padding: 0 1rem;}
+
+    .nav {height: calc(3rem + 1.5rem) !important; column-gap: 1rem;}
+    .nav__list li a svg,
+    .nav__menu-btn,
+    .nav__menu__close {display: none;}
+    
+    .nav__menu {margin-left: auto;}
+    .nav__list {display: flex; column-gap: 2rem;}
+    
+    .home__content {padding-top: 5.5rem; column-gap: 2rem;}
+    .home__profile-img svg {width: 270px;}
+
+    .experience__sections {grid-template-columns: 0.5fr;}
+}
+
+@media screen and (min-width: 1024px) {
+    header,
+    main,
+    footer {padding: 0;}
+
+    .home__profile-img svg {width: 320px;}
+}

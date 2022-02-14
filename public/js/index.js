@@ -52,7 +52,7 @@ window.addEventListener('scroll', scrollActive);
 const backToTop = document.getElementById('scroll-up');
 const checkScroll=()=>{
     let pageOffset = window.pageYOffset;
-    if(pageYOffset >= 300){
+    if(pageYOffset >= 200){
         backToTop.classList.add('scroll-up--show');  
     }else{
         backToTop.classList.remove('scroll-up--show'); 
