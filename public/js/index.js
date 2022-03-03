@@ -48,16 +48,6 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive);
 
-// 포트폴리오 number 스크롤 애니메이션
-// window.addEventListener('scroll', function() {
-//     const project = document.querySelectorAll('.portfolio__project');
-//     const scrT = document.documentElement.scrollTop;
-//     project.forEach(current => {
-//         const box = current.offsetHeight;
-//         const boxTop = current.offsetTop;
-//         if(scrT > boxTop && scrT <= boxTop + box) {
-//             project.classList.add('portfolio__project--active');
-//         } else {
 
 // 포트폴리오 number 스크롤 애니메이션
 function getSectionPoint() {
