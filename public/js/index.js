@@ -58,40 +58,35 @@ window.addEventListener('scroll', scrollActive);
 //         if(scrT > boxTop && scrT <= boxTop + box) {
 //             project.classList.add('portfolio__project--active');
 //         } else {
-//             project.classList.remove('portfolio__project--active');
-//         }
-//     });
-// });
-// function getSectionPoint() {
-//     const section = document.querySelector('#section3')
-//     const sections = document.querySelectorAll('.project');
-//     const thisPoint = document.documentElement.scrollTop;
 
-//     for (let i = 0; i < sections.length; i++) {
-//         let number = 250; //margin-bottom
+// 포트폴리오 number 스크롤 애니메이션
+function getSectionPoint() {
+    const section = document.querySelector('.portfolio')
+    const sections = document.querySelectorAll('.portfolio__project');
+    const thisPoint = document.documentElement.scrollTop;
 
-//         if (thisPoint >= (section.offsetTop + sections[0].offsetTop) && thisPoint <= (section.offsetTop + section.clientHeight)) {
+    for (let i = 0; i < sections.length; i++) {
+        let number = 100; //margin-bottom
 
-//             let point = sections[0].offsetTop + Math.abs(sections[0].getBoundingClientRect().top);
-//             const num = document.querySelectorAll('.num');
+        if (thisPoint >= (section.offsetTop + sections[0].offsetTop) && thisPoint <= (section.offsetTop + section.clientHeight)) {
 
-//             // console.log(sections[0].getBoundingClientRect().top);
-//             // console.log("sections.offsetTop : " + sections[0].offsetTop);
+            let point = sections[0].offsetTop + Math.abs(sections[0].getBoundingClientRect().top - 100);
+            const num = document.querySelectorAll('.number');
 
-//             if ((sections[i].offsetTop - number) <= point) {
-//                 if (Number(num[i].textContent) > 1) {
-//                     sections[i - 1].classList.remove('active');
-//                     sections[i].classList.add('active');
-//                 } else {
-//                     sections[i].classList.add('active');
-//                 }
-//             } else {
-//                 sections[i].classList.remove('active');
-//             }
-//         }
-//     }
-// }
-// window.addEventListener('scroll', getSectionPoint);
+            if ((sections[i].offsetTop - number) <= point) {
+                if (Number(num[i].textContent) > 1) {
+                    sections[i - 1].classList.remove('portfolio__project--active');
+                    sections[i].classList.add('portfolio__project--active');
+                } else {
+                    sections[i].classList.add('portfolio__project--active');
+                }
+            } else {
+                sections[i].classList.remove('portfolio__project--active');
+            }
+        }
+    }
+}
+window.addEventListener('scroll', getSectionPoint);
 
 // 포트폴리오 모달창
 const modalBtns = document.querySelectorAll(".portfolio__box");

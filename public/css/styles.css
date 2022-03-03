@@ -54,9 +54,10 @@ header .nav .nav__menu-btn:hover svg > path {fill: var(--main-color);}
 .experience__line {width: 1px; height: 100%; display: block; background-color: var(--main-color); transform: translate(6px, -7px);}
 
 /* == PORTFOILO == */
+.portfolio {position: relative;}
 .portfolio__project {margin-bottom: 70px; display: flex; justify-content: space-between; align-items: flex-start;}
 .portfolio__project:last-of-type {margin-bottom: 0;}
-.portfolio__project .number {width: 25%; font-size: 16vw; font-weight: 600; line-height: 0.78; color: transparent; -webkit-text-stroke: 1px rgba(110, 87, 224, 0.5); position: sticky; top: 150px; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
+.portfolio__project .number {font-size: 16vw; font-weight: 600; color: transparent; -webkit-text-stroke: 1px rgba(110, 87, 224, 0.5); position: sticky; top: 100px; left: 0; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
 .portfolio__project--active .number {color: var(--main-color);}
 .portfolio__box {width: 70%; font-size: 0; position: relative; overflow: hidden;}
 .portfolio__hover-box {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: #000; opacity: 0; position: absolute; bottom: -100%; left: 0; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;}
