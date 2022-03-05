@@ -56,7 +56,7 @@ button {padding: 0; background: none; border: none; cursor: pointer;}
 .section {padding: 2rem 0 4rem;}
 .section .title {font-size: var(--h1-font-size); text-align: center;}
 .title {margin-bottom: var(--m-2); font-size: var(--h1-font-size); text-align: center;}
-.button {padding: 1rem; display: inline-flex; align-items: center; color: var(--white-color); background-color: var(--main-color); -webkit-border-radius: 0.5rem; -moz-border-radius: 0.5rem; border-radius: 0.5rem;}
+.button {padding: 1rem; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: -moz-inline-box; display: -webkit-inline-box; display: inline-flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; color: var(--white-color); background-color: var(--main-color); -webkit-border-radius: 0.5rem; -moz-border-radius: 0.5rem; border-radius: 0.5rem;}
 .button svg {width: 1.25rem; height: auto; margin-left: var(--m-0-5);}
 .button svg > path {fill: var(--white-color);}
 .button:hover {color: var(--white-color); background-color: var(--hover-color);}
