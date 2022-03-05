@@ -48,6 +48,21 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive);
 
+// nav 링크 클릭 시 해당 섹션으로 이동
+const menuLink = document.querySelectorAll('.nav__list > li a');
+menuLink.forEach((link) => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id_value = e.target.getAttribute('href');
+        document.querySelector(id_value).scrollIntoView({behavior: 'smooth'});
+    });
+});
+const contactHomeBtn = document.querySelector('.home .home__txt a.button');
+contactHomeBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const id_value = e.target.getAttribute('href');
+    document.querySelector(id_value).scrollIntoView({behavior: 'smooth'});
+});
 
 // 포트폴리오 number 스크롤 애니메이션
 function getSectionPoint() {
