@@ -1,3 +1,4 @@
+/* Poppins */
 @font-face {
 font-family: 'Poppins-Regular';
     src: url('../font/Poppins-Regular.eot');
@@ -8,6 +9,7 @@ font-family: 'Poppins-Regular';
          url('../font/Poppins-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Poppins-Medium';
@@ -19,6 +21,7 @@ font-family: 'Poppins-Regular';
          url('../font/Poppins-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Poppins-SemiBold';
@@ -30,4 +33,43 @@ font-family: 'Poppins-Regular';
          url('../font/Poppins-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
+}
+
+/* NotoSansKR */
+@font-face {
+    font-family: 'NotoSansKR-Regular';
+    src: url('../font/NotoSansKR-Regular.eot');
+    src: url('../font/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/NotoSansKR-Regular.woff2') format('woff2'),
+         url('../font/NotoSansKR-Regular.woff') format('woff'),
+         url('../font/NotoSansKR-Regular.ttf') format('truetype'),
+         url('../font/NotoSansKR-Regular.svg#NotoSansKR-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NotoSansKR-Medium';
+    src: url('../font/NotoSansKR-Medium.eot');
+    src: url('../font/NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../font/NotoSansKR-Medium.woff2') format('woff2'),
+         url('../font/NotoSansKR-Medium.woff') format('woff'),
+         url('../font/NotoSansKR-Medium.ttf') format('truetype'),
+         url('../font/NotoSansKR-Medium.svg#NotoSansKR-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NotoSansKR-Bold';
+    src: url('../font/NotoSansKR-Bold.eot');
+    src: url('../font/NotoSansKR-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/NotoSansKR-Bold.woff2') format('woff2'),
+         url('../font/NotoSansKR-Bold.woff') format('woff'),
+         url('../font/NotoSansKR-Bold.ttf') format('truetype'),
+         url('../font/NotoSansKR-Bold.svg#NotoSansKR-Bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
